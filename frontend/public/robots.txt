@@ -1,0 +1,11 @@
+# robots.txt for www.sawaaenterprise.com
+
+User-agent: *
+Allow: /
+Disallow:
+
+# Be polite to bots
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.sawaaenterprise.com/sitemap.xml

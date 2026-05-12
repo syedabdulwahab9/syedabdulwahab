@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Sawaa Enterprise Pvt. Limited — Global Engineering &amp; Digital Ventures</title>
+  <meta name="description" content="Sawaa Enterprise Pvt. Limited — Global Engineering & Digital Ventures. Premium leadership, flagship digital portfolio, and enterprise-grade execution." />
+  <meta name="keywords" content="Sawaa Enterprise, Sawaa Enterprise Pvt Limited, Global Engineering, Digital Ventures, Qalb Digital, Euphoria by Sawaa, Noorehayat" />
+  <meta property="og:title" content="Sawaa Enterprise Pvt. Limited - Global Engineering & Digital Ventures" />
+  <meta property="og:description" content="Premium leadership, flagship digital portfolio, and enterprise-grade execution." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230E0F11'/><text x='50' y='62' font-family='Playfair Display, serif' font-size='52' font-weight='800' fill='%23FF5A2C' text-anchor='middle'>S</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Amiri:wght@400;700&display=swap" />
+
+  <!-- Tailwind via Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            arabic: ['Amiri', '"Noto Naskh Arabic"', 'serif'],
+          },
+          colors: {
+            brand: '#FF5A2C',
+            ink: '#0E0F11',
+            cream: '#F4EEE3',
+            sand: '#EDE6D7',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root { --brand:#FF5A2C; --ink:#0E0F11; --cream:#F4EEE3; --sand:#EDE6D7; }
+    html { scroll-behavior: smooth; }
+    body {
+      background:#F4EEE3; color:#0E0F11;
+      font-family:'Plus Jakarta Sans', system-ui, sans-serif;
+      font-feature-settings:'ss01' 1, 'cv11' 1;
+      -webkit-font-smoothing:antialiased;
+    }
+    ::selection { background:rgba(255,90,44,0.4); color:#0E0F11; }
+    .container-x { max-width:1320px; margin-inline:auto; padding-inline:1.5rem; }
+    @media (min-width:640px){ .container-x{ padding-inline:2rem; } }
+    @media (min-width:1024px){ .container-x{ padding-inline:2.5rem; } }
+
+    .serif { font-family:'Playfair Display', serif; }
+    .arabic { font-family:'Amiri','Noto Naskh Arabic',serif; }
+    .number-mono { font-feature-settings:'tnum' 1,'lnum' 1; letter-spacing:0.04em; }
+    .text-balance { text-wrap:balance; }
+
+    .glass-card{
+      background:rgba(255,255,255,0.55);
+      backdrop-filter:blur(20px) saturate(140%);
+      -webkit-backdrop-filter:blur(20px) saturate(140%);
+      border:1px solid rgba(15,15,17,0.08);
+      box-shadow:0 1px 0 0 rgba(255,255,255,0.6) inset, 0 30px 60px -40px rgba(0,0,0,0.18);
+    }
+    .glass-dark{
+      background:rgba(15,15,17,0.55);
+      backdrop-filter:blur(20px) saturate(140%);
+      -webkit-backdrop-filter:blur(20px) saturate(140%);
+      border:1px solid rgba(255,255,255,0.10);
+    }
+    .industrial-grid-dark{
+      background-image:
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size:56px 56px;
+    }
+    .hairline{ background-image:linear-gradient(90deg, transparent, rgba(15,15,17,0.18), transparent); height:1px; }
+    .hairline-dark{ background-image:linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent); height:1px; }
+    .underline-accent{
+      background-image:linear-gradient(transparent 60%, rgba(255,90,44,0.35) 60%);
+      background-repeat:no-repeat; background-size:100% 100%;
+    }
+
+    @keyframes marquee {
+      from { transform:translateX(0); }
+      to { transform:translateX(-50%); }
+    }
+    .marquee-track { animation:marquee 38s linear infinite; }
+
+    /* Scroll reveal */
+    .reveal { opacity:0; transform:translateY(40px); filter:blur(8px); transition:opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1), filter .9s cubic-bezier(.16,1,.3,1); }
+    .reveal.in { opacity:1; transform:translateY(0); filter:blur(0); }
+    .reveal[data-delay="1"]{ transition-delay:.06s; }
+    .reveal[data-delay="2"]{ transition-delay:.12s; }
+    .reveal[data-delay="3"]{ transition-delay:.18s; }
+    .reveal[data-delay="4"]{ transition-delay:.24s; }
+    .reveal[data-delay="5"]{ transition-delay:.30s; }
+
+    .card-hover { transition: transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1), border-color .5s; }
+    .card-hover:hover { transform:translateY(-6px); border-color:rgba(255,90,44,.4); box-shadow:0 30px 60px -30px rgba(0,0,0,.18); }
+
+    .pill {
+      display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+      border-radius:9999px; font-weight:600; font-size:.875rem; height:3rem; padding-inline:1.5rem;
+      transition:all .3s;
+    }
+    .pill-dark { background:#0E0F11; color:#fff; }
+    .pill-dark:hover { background:#FF5A2C; }
+    .pill-orange { background:#FF5A2C; color:#fff; }
+    .pill-orange:hover { background:#E84B1F; }
+    .pill-light { background:#fff; color:#0E0F11; border:1px solid rgba(14,15,17,.10); }
+    .pill-light:hover { border-color:rgba(14,15,17,.40); }
+    .pill-white { background:#fff; color:#000; }
+    .pill-white:hover { background:#e5e5e5; }
+    .pill-ghost { background:rgba(255,255,255,.05); color:#fff; border:1px solid rgba(255,255,255,.3); backdrop-filter:blur(10px); }
+    .pill-ghost:hover { background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.5); }
+
+    .icon-sm { width:1rem; height:1rem; }
+    .icon-md { width:1.25rem; height:1.25rem; }
+
+    .line-clamp-2 { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+
+    /* Toast */
+    .toast{
+      position:fixed; bottom:1.5rem; right:1.5rem; z-index:99;
+      background:#0E0F11; color:#fff; padding:.9rem 1.1rem; border-radius:.85rem;
+      box-shadow:0 20px 40px -20px rgba(0,0,0,.4); border:1px solid rgba(255,255,255,.1);
+      max-width:360px; transform:translateY(20px); opacity:0; transition:all .3s; font-size:.875rem;
+    }
+    .toast.show { transform:translateY(0); opacity:1; }
+    .toast .t-title { font-weight:600; }
+    .toast .t-desc { color:#a1a1aa; font-size:.8rem; margin-top:.15rem; }
+    .toast.success { border-left:3px solid #FF5A2C; }
+    .toast.error { border-left:3px solid #ef4444; }
+
+    select option { background:#0E0F11; color:#fff; }
+  </style>
+</head>
+<body class="bg-cream text-ink">
+
+  <!-- =================== HEADER =================== -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all">
+    <div class="container-x py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="leading-tight">
+          <p id="brand-name" class="font-bold tracking-[0.04em] text-lg text-white transition-colors">Sawaa</p>
+          <p id="brand-sub" class="text-[9px] uppercase tracking-[0.28em] text-zinc-300 transition-colors">Enterprise Pvt. Ltd.</p>
+        </div>
+      </a>
+      <nav id="site-nav" class="hidden md:flex items-center gap-8 text-sm text-zinc-200 transition-colors">
+        <a href="#services" class="hover:text-brand transition">Services</a>
+        <a href="#ventures" class="hover:text-brand transition">Ventures</a>
+        <a href="#leadership" class="hover:text-brand transition">Leadership</a>
+        <a href="#contact" class="hover:text-brand transition">Contact</a>
+      </nav>
+      <a id="header-cta" href="#contact" class="pill pill-white">
+        Get to know us <i data-lucide="arrow-right" class="icon-sm"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="relative min-h-screen">
+
+    <!-- =================== HERO =================== -->
+    <section id="hero" class="relative min-h-[100svh] overflow-hidden text-white bg-black">
+      <div class="absolute inset-0 bg-black">
+        <canvas id="dot-globe" class="absolute inset-0 h-full w-full pointer-events-none"></canvas>
+        <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.6) 100%);"></div>
+      </div>
+
+      <div class="relative container-x pt-36 pb-24 lg:pt-44 lg:pb-32">
+        <div class="reveal">
+          <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-3 py-1 rounded-full text-[10px] uppercase tracking-[0.3em] backdrop-blur-md">
+            <i data-lucide="sparkles" class="h-3 w-3"></i> Sawaa Enterprise Pvt. Limited
+          </span>
+        </div>
+
+        <h1 class="reveal mt-7 text-[10vw] sm:text-6xl lg:text-7xl xl:text-[5.6rem] font-extrabold leading-[1.02] tracking-tight text-white max-w-5xl text-balance" data-delay="1">
+          Sawaa Enterprise: <br class="hidden sm:block" />
+          <span class="text-white">Forging the Future of </span>
+          <span class="serif italic font-semibold text-zinc-200">Global Digital Ventures</span>.
+        </h1>
+
+        <p class="reveal mt-7 max-w-2xl text-lg sm:text-xl text-zinc-300 leading-relaxed" data-delay="2">
+          A premium council forging flagship digital and engineering ventures at executive standard — built on craft, governance, and conviction.
+        </p>
+
+        <div class="reveal mt-10 flex flex-wrap items-center gap-3" data-delay="3">
+          <a href="#ventures" class="pill pill-white">View Our Ventures <i data-lucide="arrow-right" class="icon-sm"></i></a>
+          <a href="#contact" class="pill pill-ghost">Inquire Digitally <i data-lucide="arrow-up-right" class="icon-sm"></i></a>
+        </div>
+
+        <div class="reveal mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border border-white/15 rounded-2xl overflow-hidden max-w-3xl" data-delay="4">
+          <div class="bg-black/70 backdrop-blur-sm px-5 py-4">
+            <div class="number-mono text-2xl font-bold text-white">20</div>
+            <div class="mt-1 text-[10px] uppercase tracking-[0.28em] text-zinc-400">Live Ventures</div>
+          </div>
+          <div class="bg-black/70 backdrop-blur-sm px-5 py-4">
+            <div class="number-mono text-2xl font-bold text-white">12</div>
+            <div class="mt-1 text-[10px] uppercase tracking-[0.28em] text-zinc-400">Council Members</div>
+          </div>
+          <div class="bg-black/70 backdrop-blur-sm px-5 py-4">
+            <div class="number-mono text-2xl font-bold text-white">∞</div>
+            <div class="mt-1 text-[10px] uppercase tracking-[0.28em] text-zinc-400">Standard of Craft</div>
+          </div>
+          <div class="bg-black/70 backdrop-blur-sm px-5 py-4">
+            <div class="number-mono text-2xl font-bold text-white">24/7</div>
+            <div class="mt-1 text-[10px] uppercase tracking-[0.28em] text-zinc-400">Enterprise Discipline</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.32em] text-zinc-400 flex flex-col items-center gap-2">
+        <span>Scroll</span>
+        <span class="h-8 w-px bg-gradient-to-b from-zinc-400 to-transparent"></span>
+      </div>
+    </section>
+
+    <!-- =================== SERVICES =================== -->
+    <section id="services" class="relative py-24">
+      <div class="container-x">
+        <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-600">
+          <span class="number-mono text-brand">01</span>
+          <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+          <span>Services — What we do &amp; how we do it</span>
+        </div>
+        <div class="mt-6 flex items-end justify-between flex-wrap gap-6">
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink max-w-3xl text-balance">
+            A multi-disciplinary <span class="underline-accent">powerhouse</span>.<br>
+            <span class="text-zinc-400">Six disciplines. One council.</span>
+          </h2>
+          <p class="text-zinc-600 max-w-md">
+            Every venture we build runs on the same disciplined operating model — discover, design, build, launch &amp; scale.
+          </p>
+        </div>
+
+        <!-- Process 4-step -->
+        <div class="mt-14 rounded-3xl bg-white border border-ink/10 overflow-hidden">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-ink/10" id="process-grid"></div>
+        </div>
+
+        <div class="mt-16 flex items-center gap-4 mb-6">
+          <i data-lucide="layers" class="h-4 w-4 text-brand"></i>
+          <h3 class="text-sm uppercase tracking-[0.3em] text-zinc-700">Our Capabilities</h3>
+          <div class="flex-1 hairline"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- =================== LOGOS MARQUEE =================== -->
+    <section class="py-10 border-y border-ink/10 bg-sand overflow-hidden">
+      <div class="flex gap-12 marquee-track whitespace-nowrap" id="logos-track"></div>
+    </section>
+
+    <!-- =================== ONE COUNCIL =================== -->
+    <section id="about" class="relative py-24">
+      <div class="container-x grid lg:grid-cols-12 gap-10 items-center">
+        <div class="reveal lg:col-span-7">
+          <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-600">
+            <span class="number-mono text-brand">02</span>
+            <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+            <span>One Partner</span>
+          </div>
+          <h2 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink text-balance">
+            One council for your entire <span class="underline-accent">venture lifecycle</span>.
+          </h2>
+          <p class="mt-6 text-lg text-zinc-700 leading-relaxed max-w-xl">
+            Co-creators. Disciplined builders. Sawaa Enterprise Pvt. Limited is a council of founders, directors and engineers guiding you through every stage of the digital and engineering venture lifecycle.
+          </p>
+          <p class="mt-5 text-base text-zinc-600 leading-relaxed max-w-xl">
+            <span class="font-semibold text-ink">No middlemen. No hand-offs.</span> Every director, engineer, and designer on your venture is part of our in-house council — invested in your success as we are in our own.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="pill pill-dark">Engage the council <i data-lucide="arrow-right" class="icon-sm"></i></a>
+            <a href="#leadership" class="pill pill-light">Meet the board</a>
+          </div>
+        </div>
+        <div class="reveal lg:col-span-5" data-delay="1">
+          <div class="relative aspect-[4/5] rounded-3xl overflow-hidden bg-zinc-200">
+            <img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&q=85&auto=format&fit=crop" alt="Sawaa Enterprise council collaborating" class="absolute inset-0 h-full w-full object-cover" />
+            <div class="absolute top-4 left-4 right-4 flex items-center gap-2">
+              <div class="glass-dark rounded-full px-3 py-1.5 text-white text-[10px] uppercase tracking-[0.28em]">In-house council</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== VISION & MISSION =================== -->
+    <section class="relative py-24">
+      <div class="container-x">
+        <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-600">
+          <span class="number-mono text-brand">03</span>
+          <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+          <span>Vision &amp; Mission</span>
+        </div>
+        <div class="mt-6 flex items-end justify-between flex-wrap gap-6">
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink max-w-3xl text-balance">
+            Where we&rsquo;re going.<br>
+            <span class="text-zinc-400">How we get there.</span>
+          </h2>
+          <p class="text-zinc-600 max-w-md">
+            The compass and the engine of Sawaa Enterprise — read together, they describe the standard we hold ourselves to every day.
+          </p>
+        </div>
+
+        <div class="mt-14 grid lg:grid-cols-2 gap-6" id="vm-grid"></div>
+      </div>
+    </section>
+
+    <!-- =================== VENTURES =================== -->
+    <section id="ventures" class="relative py-24">
+      <div class="container-x">
+        <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-600">
+          <span class="number-mono text-brand">03</span>
+          <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+          <span>Portfolio of Excellence</span>
+        </div>
+        <div class="mt-6 flex items-end justify-between flex-wrap gap-6">
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink max-w-3xl text-balance">
+            Global ventures.<br><span class="text-zinc-400">Built to a standard.</span>
+          </h2>
+          <p class="text-zinc-600 max-w-md">
+            A curated portfolio engineered for scale, finished with design, and judged on performance.
+          </p>
+        </div>
+        <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- =================== LEADERSHIP =================== -->
+    <section id="leadership" class="relative py-24 bg-sand">
+      <div class="container-x">
+        <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-600">
+          <span class="number-mono text-brand">04</span>
+          <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+          <span>Board of Directors</span>
+        </div>
+        <div class="mt-6 flex items-end justify-between flex-wrap gap-6">
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink max-w-3xl text-balance">
+            The corporate board.<br><span class="text-zinc-400">Engineered to lead.</span>
+          </h2>
+          <p class="text-zinc-600 max-w-md">
+            A premium council overseeing strategy, governance, and the technical craft behind every Sawaa venture.
+          </p>
+        </div>
+
+        <div class="mt-14">
+          <div class="flex items-center gap-4 mb-6">
+            <i data-lucide="crown" class="h-4 w-4 text-brand"></i>
+            <h3 class="text-sm uppercase tracking-[0.3em] text-zinc-700">Management Team</h3>
+            <div class="flex-1 hairline"></div>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5" id="mgmt-grid"></div>
+        </div>
+
+        <div class="mt-20">
+          <div class="flex items-center gap-4 mb-6">
+            <i data-lucide="code-2" class="h-4 w-4 text-brand"></i>
+            <h3 class="text-sm uppercase tracking-[0.3em] text-zinc-700">Development Team</h3>
+            <div class="flex-1 hairline"></div>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5" id="dev-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== DIRECTOR MESSAGE =================== -->
+    <section class="relative py-24">
+      <div class="container-x">
+        <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-600">
+          <span class="number-mono text-brand">05</span>
+          <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+          <span>A Letter from the Director</span>
+        </div>
+        <div class="mt-10 grid lg:grid-cols-12 gap-8">
+          <div class="reveal lg:col-span-5 glass-card rounded-3xl p-8">
+            <p class="text-3xl sm:text-4xl text-ink leading-snug arabic" dir="rtl" lang="ar">السَّلَامُ عَلَيْكُمْ</p>
+            <p class="mt-3 text-xs uppercase tracking-[0.28em] text-brand">Peace be upon you</p>
+            <div class="hairline my-6"></div>
+            <p class="serif text-lg text-zinc-700 leading-relaxed">
+              At Sawaa Enterprise, we treat every venture as a covenant — a measured promise between craft, conviction, and the client. Our standard is not negotiated; it is practiced.
+            </p>
+          </div>
+          <div class="reveal lg:col-span-7 relative rounded-3xl overflow-hidden bg-ink text-white p-8 lg:p-12" data-delay="1">
+            <div class="absolute inset-0 industrial-grid-dark opacity-30"></div>
+            <i data-lucide="quote" class="relative h-7 w-7 text-brand"></i>
+            <p class="serif relative mt-6 text-xl sm:text-2xl leading-relaxed text-balance italic">
+              We have built Sawaa to be more than an enterprise — it is a discipline. From global engineering to flagship digital ventures, our work is engineered for
+              <span class="text-white font-semibold not-italic">scale</span>, finished with
+              <span class="text-white font-semibold not-italic">design</span>, and judged on
+              <span class="text-white font-semibold not-italic">performance</span>. We invite you to engage with us at that standard.
+            </p>
+            <div class="relative mt-10 flex items-center gap-4">
+              <div class="h-12 w-12 rounded-full bg-gradient-to-br from-brand to-[#a83a00] flex items-center justify-center text-white font-bold">BA</div>
+              <div>
+                <p class="serif text-white font-semibold text-lg">Syed Basharat Ali</p>
+                <p class="text-xs uppercase tracking-[0.24em] text-zinc-400">Director — Sawaa Enterprise Pvt. Limited</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== TECH =================== -->
+    <section class="py-24">
+      <div class="container-x">
+        <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-600">
+          <span class="number-mono text-brand">06</span>
+          <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+          <span>Languages &amp; Tech stack</span>
+        </div>
+        <div class="mt-6 flex items-end justify-between flex-wrap gap-6">
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink max-w-3xl text-balance">
+            The languages we <span class="underline-accent">speak fluently</span>.
+          </h2>
+          <p class="text-zinc-600 max-w-md">
+            Modern, battle-tested stacks chosen for performance, safety and the executive standard your venture deserves.
+          </p>
+        </div>
+        <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3" id="tech-grid"></div>
+      </div>
+    </section>
+
+    <!-- =================== ENGAGEMENTS =================== -->
+    <section class="py-24 bg-sand">
+      <div class="container-x">
+        <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-600">
+          <span class="number-mono text-brand">07</span>
+          <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+          <span>Engagement models</span>
+        </div>
+        <h2 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink max-w-3xl text-balance">
+          Three ways to <span class="underline-accent">work with Sawaa</span>.
+        </h2>
+        <div class="mt-12 grid md:grid-cols-3 gap-5" id="engagements-grid"></div>
+      </div>
+    </section>
+
+    <!-- =================== STATS =================== -->
+    <section class="py-24 bg-ink text-white">
+      <div class="container-x grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-500">
+            <span class="number-mono text-brand">08</span>
+            <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+            <span class="text-zinc-400">Engineering real value</span>
+          </div>
+          <h2 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white text-balance">
+            Standard practiced.<br><span class="text-brand">Not negotiated.</span>
+          </h2>
+        </div>
+        <div class="lg:col-span-7 grid grid-cols-2 gap-5">
+          <div class="reveal rounded-3xl border border-white/10 bg-white/5 p-7">
+            <p class="number-mono text-5xl font-extrabold text-white">20</p>
+            <p class="mt-3 text-[10px] uppercase tracking-[0.3em] text-zinc-400">Live ventures</p>
+          </div>
+          <div class="reveal rounded-3xl border border-white/10 bg-white/5 p-7" data-delay="1">
+            <p class="number-mono text-5xl font-extrabold text-white">12</p>
+            <p class="mt-3 text-[10px] uppercase tracking-[0.3em] text-zinc-400">Leadership council</p>
+          </div>
+          <div class="reveal rounded-3xl border border-white/10 bg-white/5 p-7" data-delay="2">
+            <p class="number-mono text-5xl font-extrabold text-white">15+</p>
+            <p class="mt-3 text-[10px] uppercase tracking-[0.3em] text-zinc-400">Disciplines mastered</p>
+          </div>
+          <div class="reveal rounded-3xl border border-white/10 bg-white/5 p-7" data-delay="3">
+            <p class="number-mono text-5xl font-extrabold text-white">∞</p>
+            <p class="mt-3 text-[10px] uppercase tracking-[0.3em] text-zinc-400">Standard of craft</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== CONTACT =================== -->
+    <section id="contact" class="relative py-20 sm:py-24">
+      <div class="container-x">
+        <div class="relative rounded-3xl sm:rounded-[2rem] overflow-hidden bg-ink text-white px-5 py-12 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+          <div class="absolute inset-0 industrial-grid-dark opacity-30"></div>
+          <div class="absolute -top-32 right-0 h-[500px] w-[500px] rounded-full bg-brand/15 blur-3xl pointer-events-none"></div>
+
+          <div class="relative max-w-3xl mx-auto text-center">
+            <div class="flex items-center justify-center gap-3 text-[11px] uppercase tracking-[0.32em] text-zinc-500">
+              <span class="number-mono text-brand">09</span>
+              <span class="h-px w-10 bg-gradient-to-r from-brand/80 to-transparent"></span>
+              <span class="text-zinc-400">Direct Enterprise</span>
+            </div>
+
+            <h2 class="reveal mt-6 sm:mt-8 text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white text-balance leading-[1.05]">
+              Speak directly with <br class="hidden sm:block" />
+              <span class="text-brand">Sawaa Enterprise</span>.
+            </h2>
+
+            <p class="reveal mt-5 sm:mt-6 text-zinc-300 max-w-xl mx-auto text-sm sm:text-base leading-relaxed px-2" data-delay="1">
+              One channel. One inbox. One standard. Every enquiry is read by our council and answered with executive discipline within 24 hours.
+            </p>
+
+            <!-- Email pill -->
+            <div class="reveal mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 max-w-xl mx-auto" data-delay="2">
+              <div class="flex-1 min-w-0 flex items-center gap-3 glass-dark rounded-2xl sm:rounded-full px-5 py-4 sm:py-3">
+                <i data-lucide="mail" class="h-4 w-4 text-brand shrink-0"></i>
+                <a href="mailto:sawaaenterprise@gmail.com" class="text-white text-sm sm:text-base font-medium tracking-wide truncate">sawaaenterprise@gmail.com</a>
+              </div>
+              <button id="copy-email" type="button" aria-label="Copy email" class="inline-flex items-center justify-center gap-2 rounded-2xl sm:rounded-full bg-brand hover:bg-[#E84B1F] text-white text-xs font-semibold px-5 h-12 transition-all">
+                <i data-lucide="copy" class="h-3.5 w-3.5"></i> <span>Copy email</span>
+              </button>
+            </div>
+
+            <div class="reveal mt-5 flex justify-center" data-delay="3">
+              <a href="mailto:sawaaenterprise@gmail.com?subject=Enquiry%20%C2%B7%20Sawaa%20Enterprise&body=Hello%20Sawaa%20Council%2C%0A%0AI'd%20like%20to%20enquire%20about..."
+                 class="inline-flex items-center gap-2 text-[11px] sm:text-xs uppercase tracking-[0.28em] text-zinc-300 hover:text-brand transition">
+                <i data-lucide="send" class="h-3.5 w-3.5"></i> Compose enquiry
+              </a>
+            </div>
+
+            <!-- Contact form (mailto fallback) -->
+            <form id="contact-form" class="reveal mt-12 grid sm:grid-cols-2 gap-3 text-left" data-delay="3">
+              <div class="hidden"><input type="text" id="hp-website" tabindex="-1" autocomplete="off" /></div>
+              <div>
+                <label class="text-[10px] uppercase tracking-[0.28em] text-zinc-400">Name *</label>
+                <input id="c-name" required class="mt-2 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-brand focus:ring-1 focus:ring-brand focus:outline-none transition" placeholder="Your full name" />
+              </div>
+              <div>
+                <label class="text-[10px] uppercase tracking-[0.28em] text-zinc-400">Email *</label>
+                <input id="c-email" type="email" required class="mt-2 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-brand focus:ring-1 focus:ring-brand focus:outline-none transition" placeholder="you@example.com" />
+              </div>
+              <div>
+                <label class="text-[10px] uppercase tracking-[0.28em] text-zinc-400">Company</label>
+                <input id="c-company" class="mt-2 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-brand focus:ring-1 focus:ring-brand focus:outline-none transition" placeholder="Optional" />
+              </div>
+              <div>
+                <label class="text-[10px] uppercase tracking-[0.28em] text-zinc-400">Service Request *</label>
+                <select id="c-service" required class="mt-2 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:border-brand focus:ring-1 focus:ring-brand focus:outline-none transition appearance-none cursor-pointer">
+                  <option value="" disabled selected>Select what you need…</option>
+                  <option>Full-Stack Development</option>
+                  <option>UI / UX Audit</option>
+                  <option>Brand &amp; Product Design</option>
+                  <option>Enterprise Engineering</option>
+                  <option>Strategic Partnership</option>
+                  <option>Venture Co-Build</option>
+                  <option>Staff Augmentation</option>
+                  <option>Other — General Enquiry</option>
+                </select>
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-[10px] uppercase tracking-[0.28em] text-zinc-400">Brief</label>
+                <textarea id="c-message" rows="4" class="mt-2 w-full bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-brand focus:ring-1 focus:ring-brand focus:outline-none transition" placeholder="Tell us about your venture, scope, and timelines."></textarea>
+              </div>
+              <div class="sm:col-span-2 mt-2 flex items-center gap-3 flex-wrap justify-between">
+                <p class="text-[10px] uppercase tracking-[0.28em] text-zinc-500">We respond within 24 hours · Confidential</p>
+                <button type="submit" class="pill pill-orange">Submit enquiry <i data-lucide="send" class="icon-sm"></i></button>
+              </div>
+            </form>
+
+            <p class="reveal mt-8 text-[10px] uppercase tracking-[0.3em] text-zinc-500" data-delay="4">
+              Confidential · 24-hour response · Global · Direct
+            </p>
+
+            <!-- Closing -->
+            <div class="reveal mt-14 sm:mt-16" data-delay="5">
+              <div class="hairline-dark mx-auto max-w-xs"></div>
+              <p class="serif italic mt-8 text-3xl sm:text-4xl text-white arabic" dir="rtl" lang="ar">السَّلَامُ عَلَيْكُمْ</p>
+              <p class="serif italic mt-3 text-2xl sm:text-3xl text-white">JazakAllah Khair</p>
+              <p class="mt-2 text-[10px] sm:text-xs uppercase tracking-[0.3em] text-zinc-400">May Allah reward you with goodness</p>
+              <div class="mt-8 sm:mt-10">
+                <p class="serif italic text-zinc-300 text-base sm:text-lg">Regards,</p>
+                <p class="serif mt-1 text-white font-semibold text-xl sm:text-2xl">Syed Abdul Wahab</p>
+                <p class="text-[10px] sm:text-xs uppercase tracking-[0.28em] text-brand mt-1">Founder, CEO &amp; Full Stack Developer</p>
+                <p class="text-[10px] uppercase tracking-[0.28em] text-zinc-500 mt-1">Sawaa Enterprise Pvt. Limited</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== FOOTER =================== -->
+    <footer class="relative pt-12 pb-10 border-t border-ink/10">
+      <div class="container-x">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
+          <div>
+            <div class="flex items-center gap-3">
+              <div>
+                <p class="text-ink font-bold tracking-tight text-lg">Sawaa Enterprise Pvt. Limited</p>
+                <p class="text-[10px] uppercase tracking-[0.28em] text-zinc-500 mt-1">Global Engineering &amp; Digital Ventures</p>
+              </div>
+            </div>
+            <p class="mt-5 max-w-md text-sm text-zinc-600 leading-relaxed">
+              Sawaa Enterprise is a council of founders, directors and engineers — building flagship digital products and engineering ventures at executive standard.
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="#contact" class="text-[10px] uppercase tracking-[0.28em] text-zinc-600 hover:text-brand transition">Confidentiality &amp; Terms</a>
+            <span class="h-4 w-px bg-ink/20"></span>
+            <button id="back-to-top" type="button" aria-label="Back to top" class="inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white hover:bg-ink hover:text-white hover:border-ink transition-all text-[10px] uppercase tracking-[0.28em] px-4 h-9">
+              <i data-lucide="chevron-up" class="h-3 w-3"></i> Back to top
+            </button>
+          </div>
+        </div>
+        <div class="hairline my-8"></div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+          <p>© <span id="year"></span> Sawaa Enterprise Pvt. Limited. All rights reserved.</p>
+          <p class="text-zinc-500">Crafted with discipline · Engineered for scale</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <script>
+    /* ----------------------------- DATA ----------------------------- */
+    const MANAGEMENT = [
+      { name:'Syed Abdul Wahab', role:'Founder, CEO & Full Stack Developer', short:'AW',
+        linkedin:'https://www.linkedin.com/in/abdul-wahab-328b32330',
+        bio:'Architect of the Sawaa vision — founder and hands-on full-stack developer steering the enterprise across global engineering and digital frontiers.' },
+      { name:'Mohd Sufyaan Sayeed', role:'Co-Founder & Developer', short:'MS',
+        linkedin:'https://www.linkedin.com/in/sufyaan-mohd-4a7419339',
+        bio:'Co-founder and developer driving operational scale, partnerships, and the technical discipline behind every venture.' },
+      { name:'Syed Basharat Ali', role:'Director', short:'BA',
+        linkedin:'https://www.linkedin.com/in/mr-aajiz-b59b5b380',
+        bio:'Director overseeing enterprise governance, client relationships, and strategic execution.' },
+      { name:'Syed Ahmed Ali', role:'Managing Director', short:'AA',
+        linkedin:'https://www.linkedin.com/in/syed-ahmed-ali-30755b387',
+        bio:'Managing Director — owner of company-wide P&L, delivery excellence, and long-horizon strategy.' },
+    ];
+
+    const DEVELOPMENT = [
+      { name:'Mr. Ibrahim', role:'Head Developer', short:'IB', linkedin:null,
+        bio:'Heads engineering — owns architecture, code quality, and the technical roadmap across all ventures.' },
+      { name:'Ehtesham Mulhaq', role:'Incharge — Front-End Developer', short:'EM', linkedin:null,
+        bio:'Leads the front-end craft — pixel discipline, motion, and the polish that defines the Sawaa interface.' },
+    ];
+
+    const PROJECTS = [
+      { name:'Qalb Digital', tag:'Premium Digital Solution', industry:'Digital Platform',
+        url:'https://qalbdigital.netlify.app/',
+        image:'https://images.unsplash.com/photo-1487338875411-8880f74114a2?w=1600&q=85&auto=format&fit=crop',
+        summary:'A premium digital solution engineered for Scale — calibrated performance, modern stack, and a brand-grade interface.',
+        metrics:['100/100 SEO','Sub-1.2s LCP','Premium UI'],
+        quote:'Built for measured ambition, finished with executive polish.' },
+      { name:'Euphoria by Sawaa', tag:'Flagship UI/UX Masterpiece', industry:'Product Design',
+        url:'https://euphoriabysawaa.netlify.app/',
+        image:'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?w=1600&q=85&auto=format&fit=crop',
+        summary:'Our flagship UI/UX masterpiece — a study in Design fluency, micro-interaction, and emotional product polish.',
+        metrics:['Award-grade UI','Motion-led','Premium UI'],
+        quote:'A flagship in interface craft — every pixel earns its place.' },
+      { name:'Noorehayat', tag:'Cultural & Community Platform', industry:'Community Tech',
+        url:'https://noorehayat.netlify.app/',
+        image:'https://images.unsplash.com/photo-1575388902658-8f0c7398d9df?w=1600&q=85&auto=format&fit=crop',
+        summary:'A high-impact cultural and community platform — built for reach, accessibility, and uncompromising Performance.',
+        metrics:['98 Lighthouse','WCAG-AA','Community-scale'],
+        quote:'A platform that meets a community where it lives — at scale.' },
+    ];
+
+    const LOGOS = ['Sawaa','Qalb Digital','Euphoria','Noorehayat','Al-Saba Group','Vesta','Rifaa','Hilal Tech','Sahil','Maktab','Aqlan','Noor Studio'];
+
+    const SERVICES = [
+      { icon:'layers', n:'01', title:'Digital Transformation & Full-Stack Development',
+        what:'High-performance Next.js architectures, premium UI craft, and engineering precision built for executive-grade deployments.',
+        how:['Discovery → blueprint → release in disciplined sprints','Modern stack: Next.js, TypeScript, Tailwind, Node, MongoDB','CI/CD, observability and 99.9% uptime baked in'],
+        proof:'Reference — Qalb Digital', href:'https://qalbdigital.netlify.app/' },
+      { icon:'palette', n:'02', title:'Strategic Branding & Lifestyle Design',
+        what:'Visual storytelling and luxury aesthetics that create desire — from brand systems to flagship product interfaces.',
+        how:['Brand system: identity, voice, type and motion','High-end UI/UX flows with Figma + design tokens','Hand-finished micro-interactions and motion polish'],
+        proof:'Reference — Euphoria by Sawaa', href:'https://euphoriabysawaa.netlify.app/' },
+      { icon:'users', n:'03', title:'Social Innovation & Community Solutions',
+        what:'Values-led digital platforms, content hubs, and tools engineered for reach, accessibility, and long-horizon impact.',
+        how:['Accessibility-first (WCAG-AA) information architecture','Content & community modules tuned for retention','SEO + performance budgets, measured every release'],
+        proof:'Reference — Noorehayat', href:'https://noorehayat.netlify.app/' },
+      { icon:'cpu', n:'04', title:'Enterprise Engineering',
+        what:'Architectures built for scale, observability, and long-horizon performance.',
+        how:['Domain-driven service design and clean APIs','Cloud-native deployments on AWS / Azure / GCP','Security, audit and compliance ready'],
+        proof:'Available on engagement', href:null },
+      { icon:'rocket', n:'05', title:'Venture Acceleration',
+        what:'We co-build flagship ventures — owning roadmap, delivery, and the standard.',
+        how:['MVP → market in 8–12 weeks','Hands-on co-founder mode, board reviews fortnightly','Full IP transfer on conclusion'],
+        proof:'Available on engagement', href:null },
+      { icon:'shield-check', n:'06', title:'Governance & Advisory',
+        what:'Board-grade oversight, risk, and compliance for ventures that must endure.',
+        how:['Monthly council reviews + KPI dashboards','Tech, security and process audits','Hiring, vendor and partnership advisory'],
+        proof:'Available on engagement', href:null },
+    ];
+
+    const PROCESS = [
+      { n:'01', icon:'search', title:'Discover', desc:'We map the venture: goals, audiences, constraints, and the standard you intend to set.' },
+      { n:'02', icon:'pen-tool', title:'Design', desc:'Brand systems, product flows and interfaces — engineered to look effortless and feel inevitable.' },
+      { n:'03', icon:'wrench', title:'Build', desc:'Senior engineering with CI/CD, observability and performance budgets enforced from day one.' },
+      { n:'04', icon:'trending-up', title:'Launch & Scale', desc:'Measured releases, governance reviews, and continuous craft — we stay accountable past go-live.' },
+    ];
+
+    const TECH = [
+      { name:'JavaScript', color:'#F7DF1E' }, { name:'TypeScript', color:'#3178C6' },
+      { name:'React', color:'#61DAFB' }, { name:'Next.js', color:'#0E0F11' },
+      { name:'Node.js', color:'#5FA04E' }, { name:'Python', color:'#3776AB' },
+      { name:'Go', color:'#00ADD8' }, { name:'HTML5', color:'#E34F26' },
+      { name:'CSS3', color:'#1572B6' }, { name:'Tailwind', color:'#06B6D4' },
+      { name:'MongoDB', color:'#47A248' }, { name:'PostgreSQL', color:'#4169E1' },
+      { name:'Cloudflare', color:'#F38020' }, { name:'GCP', color:'#4285F4' },
+      { name:'Figma', color:'#F24E1E' }, { name:'Framer Motion', color:'#0055FF' },
+      { name:'Git', color:'#F05032' }, { name:'Docker', color:'#2496ED' },
+      { name:'Flutter', color:'#02569B' }, { name:'Swift', color:'#F05138' },
+      { name:'Kotlin', color:'#7F52FF' },
+    ];
+
+    const ENGAGEMENTS = [
+      { title:'Time & Materials', forWhom:'Evolving scopes, discovery-led initiatives, long-horizon products.',
+        you_get:'A dedicated, cross-functional Sawaa team flexing around your priorities with full transparency.',
+        cases:['Digital product development','Platform modernisation','Ongoing enhancement & support'] },
+      { title:'Fixed Price', forWhom:'Clearly defined requirements, scope, and timelines.',
+        you_get:'Deliverables, milestones and cost agreed up front — with full delivery responsibility on us.',
+        cases:['Well-defined builds','Compliance-driven initiatives','Discrete platform features'] },
+      { title:'Outcome-Based', forWhom:'Businesses focused on measurable business impact.',
+        you_get:'Success defined by efficiency, performance, or time-to-market — we align around the outcome.',
+        cases:['Business transformation','AI & automation programmes','Performance / efficiency lifts'] },
+    ];
+
+    const VM = [
+      { label:'Vision', icon:'trending-up',
+        title:'A council of ventures, recognised globally for the standard it sets.',
+        body:'To become the most trusted council for premium digital and engineering ventures — a name synonymous with craft, governance and conviction across markets.',
+        pillars:['Global recognition','Long-horizon impact','Executive standard'] },
+      { label:'Mission', icon:'rocket',
+        title:'Build flagship ventures from the boardroom to the keyboard, without compromise.',
+        body:'To engineer high-performance products and brand experiences for clients and our own ventures — delivered by a senior council, measured against outcomes, never against shortcuts.',
+        pillars:['Senior-only delivery','Outcome accountability','No middlemen'] },
+    ];
+
+    /* ----------------------------- RENDER ----------------------------- */
+    const $ = (s) => document.querySelector(s);
+
+    // PROCESS
+    $('#process-grid').innerHTML = PROCESS.map((p,i)=>`
+      <div class="reveal p-6 sm:p-7 group" data-delay="${i}">
+        <div class="flex items-center justify-between">
+          <span class="number-mono text-brand text-sm font-semibold">${p.n}</span>
+          <div class="h-10 w-10 rounded-xl bg-cream text-ink flex items-center justify-center transition group-hover:bg-brand group-hover:text-white">
+            <i data-lucide="${p.icon}" class="icon-sm"></i>
+          </div>
+        </div>
+        <h3 class="mt-5 text-lg font-bold text-ink">${p.title}</h3>
+        <p class="mt-2 text-sm text-zinc-600 leading-relaxed">${p.desc}</p>
+      </div>
+    `).join('');
+
+    // SERVICES
+    $('#services-grid').innerHTML = SERVICES.map((s,i)=>`
+      <div class="reveal card-hover group rounded-3xl bg-white border border-ink/10 p-7" data-delay="${i%4}">
+        <div class="flex items-center justify-between">
+          <span class="number-mono text-brand text-sm font-semibold">${s.n}</span>
+          <div class="h-11 w-11 rounded-xl bg-ink text-white flex items-center justify-center transition group-hover:bg-brand">
+            <i data-lucide="${s.icon}" class="icon-md"></i>
+          </div>
+        </div>
+        <h3 class="mt-6 text-xl font-bold text-ink leading-tight">${s.title}</h3>
+        <p class="mt-3 text-sm text-zinc-700 leading-relaxed">${s.what}</p>
+        <div class="hairline my-5"></div>
+        <p class="text-[10px] uppercase tracking-[0.28em] text-zinc-500">How we do it</p>
+        <ul class="mt-3 space-y-2">
+          ${s.how.map(h=>`<li class="flex items-start gap-2 text-sm text-zinc-800"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand mt-0.5 shrink-0"></i>${h}</li>`).join('')}
+        </ul>
+        ${s.href
+          ? `<a href="${s.href}" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center gap-1 text-xs uppercase tracking-[0.24em] text-brand hover:underline">${s.proof} <i data-lucide="arrow-up-right" class="h-3 w-3"></i></a>`
+          : `<p class="mt-6 inline-flex items-center gap-1 text-xs uppercase tracking-[0.24em] text-zinc-500">${s.proof}</p>`
+        }
+      </div>
+    `).join('');
+
+    // LOGOS (duplicate for seamless loop)
+    $('#logos-track').innerHTML = [...LOGOS,...LOGOS].map(l =>
+      `<span class="text-2xl font-bold tracking-tight text-zinc-700/70 hover:text-brand transition">${l}</span>`
+    ).join('');
+
+    // VISION / MISSION
+    $('#vm-grid').innerHTML = VM.map((b,i)=>`
+      <div class="reveal card-hover group relative rounded-3xl bg-white border border-ink/10 p-8 sm:p-10" data-delay="${i}">
+        <div class="flex items-center justify-between">
+          <p class="text-[10px] uppercase tracking-[0.32em] text-brand">— ${b.label}</p>
+          <div class="h-11 w-11 rounded-xl bg-ink text-white flex items-center justify-center transition group-hover:bg-brand">
+            <i data-lucide="${b.icon}" class="icon-md"></i>
+          </div>
+        </div>
+        <h3 class="mt-6 text-2xl sm:text-3xl font-extrabold text-ink leading-tight tracking-tight text-balance">${b.title}</h3>
+        <p class="mt-4 text-base text-zinc-700 leading-relaxed">${b.body}</p>
+        <div class="hairline my-6"></div>
+        <div class="flex flex-wrap gap-2">
+          ${b.pillars.map(p=>`<span class="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.22em] px-3 py-1.5 rounded-full bg-cream text-zinc-700 border border-ink/5"><i data-lucide="check-circle-2" class="h-3 w-3 text-brand"></i> ${p}</span>`).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    // PROJECTS
+    $('#projects-grid').innerHTML = PROJECTS.map((p,i)=>`
+      <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="reveal card-hover group relative block rounded-3xl overflow-hidden bg-white border border-ink/10" data-delay="${i}">
+        <div class="relative aspect-[16/10] w-full overflow-hidden bg-zinc-100">
+          <img src="${p.image}" alt="${p.name} — ${p.tag} by Sawaa Enterprise" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent"></div>
+          <div class="absolute top-0 inset-x-0 flex items-center gap-1.5 px-4 py-3 bg-black/40 backdrop-blur-md">
+            <span class="h-2.5 w-2.5 rounded-full bg-white/40"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-white/30"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-white/20"></span>
+            <div class="ml-3 flex-1 h-5 rounded-md bg-black/30 border border-white/10 px-3 flex items-center text-[10px] text-white/70 truncate">${p.url.replace('https://','')}</div>
+          </div>
+          <div class="absolute left-5 bottom-5 right-5 flex items-end justify-between gap-3">
+            <div>
+              <p class="text-[10px] uppercase tracking-[0.32em] text-white/80">${p.tag}</p>
+              <h4 class="mt-1.5 text-2xl sm:text-3xl font-bold text-white drop-shadow">${p.name}</h4>
+            </div>
+            <span aria-hidden class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-ink shadow-md transition-all duration-500 group-hover:bg-brand group-hover:text-white group-hover:shadow-[0_0_36px_rgba(255,90,44,0.85)]">
+              <i data-lucide="arrow-up-right" class="icon-md"></i>
+            </span>
+          </div>
+        </div>
+        <div class="p-6 sm:p-7">
+          <div class="flex items-center gap-2 text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+            <i data-lucide="globe-2" class="h-3 w-3 text-brand"></i>
+            <span>${p.industry}</span>
+          </div>
+          <p class="mt-3 text-base leading-relaxed text-zinc-800">${p.summary}</p>
+          <p class="mt-4 text-sm italic text-zinc-500">&ldquo;${p.quote}&rdquo;</p>
+          <div class="mt-5 flex flex-wrap gap-2">
+            ${p.metrics.map(m=>`<span class="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.18em] px-2.5 py-1 rounded-full bg-ink text-white"><i data-lucide="badge-check" class="h-3 w-3 text-brand"></i>${m}</span>`).join('')}
+          </div>
+        </div>
+      </a>
+    `).join('');
+
+    // MANAGEMENT / DEVELOPMENT
+    const renderTeam = (p, i) => `
+      <div class="reveal card-hover group relative" data-delay="${i%4}">
+        <div class="relative overflow-hidden rounded-3xl bg-white border border-ink/10 aspect-[4/5]">
+          <span aria-hidden class="serif pointer-events-none select-none absolute inset-0 flex items-center justify-center text-[14rem] sm:text-[16rem] font-bold leading-none text-zinc-100 opacity-90">${p.short}</span>
+          <div class="relative flex items-center justify-between p-6">
+            <span class="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.28em] text-zinc-500"><i data-lucide="crown" class="h-3 w-3 text-brand"></i> Council</span>
+            ${p.linkedin ? `<i data-lucide="badge-check" class="h-4 w-4 text-brand"></i>` : ''}
+          </div>
+          <div class="absolute left-6 right-6 bottom-6">
+            <p class="text-[10px] uppercase tracking-[0.24em] text-brand">${p.role}</p>
+            <h3 class="mt-2 text-2xl sm:text-3xl text-ink font-bold tracking-tight leading-tight">${p.name}</h3>
+            <p class="mt-3 text-sm text-zinc-600 leading-relaxed line-clamp-2">${p.bio}</p>
+            <div class="hairline my-4"></div>
+            ${p.linkedin
+              ? `<a href="${p.linkedin}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.22em] text-zinc-700 hover:text-brand transition"><i data-lucide="linkedin" class="h-3 w-3"></i> LinkedIn <i data-lucide="arrow-up-right" class="h-3 w-3"></i></a>`
+              : `<span class="inline-flex items-center text-[11px] uppercase tracking-[0.22em] text-zinc-400">Internal · No public profile</span>`}
+          </div>
+        </div>
+      </div>
+    `;
+    $('#mgmt-grid').innerHTML = MANAGEMENT.map(renderTeam).join('');
+    $('#dev-grid').innerHTML = DEVELOPMENT.map(renderTeam).join('');
+
+    // TECH
+    $('#tech-grid').innerHTML = TECH.map((t,i)=>`
+      <div class="reveal card-hover group flex items-center gap-3 px-4 py-3 rounded-2xl bg-white border border-ink/10" data-delay="${i%6}">
+        <span class="h-9 w-9 rounded-xl flex items-center justify-center shrink-0 font-bold text-xs" style="background:${t.color}15;color:${t.color}">${t.name.slice(0,2).toUpperCase()}</span>
+        <span class="text-sm font-semibold text-ink truncate">${t.name}</span>
+      </div>
+    `).join('');
+
+    // ENGAGEMENTS
+    $('#engagements-grid').innerHTML = ENGAGEMENTS.map((e,i)=>`
+      <div class="reveal rounded-3xl bg-white border border-ink/10 p-7 flex flex-col" data-delay="${i}">
+        <p class="text-[10px] uppercase tracking-[0.32em] text-brand">Model ${String(i+1).padStart(2,'0')}</p>
+        <h3 class="mt-2 text-2xl font-bold text-ink">${e.title}</h3>
+        <p class="mt-4 text-sm text-zinc-700"><span class="font-semibold text-ink">Best for </span>${e.forWhom}</p>
+        <p class="mt-4 text-sm text-zinc-700"><span class="font-semibold text-ink">What you get </span>${e.you_get}</p>
+        <div class="hairline my-5"></div>
+        <p class="text-[10px] uppercase tracking-[0.28em] text-zinc-500">Typical use cases</p>
+        <ul class="mt-3 space-y-2">
+          ${e.cases.map(c=>`<li class="flex items-start gap-2 text-sm text-zinc-800"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand mt-0.5 shrink-0"></i>${c}</li>`).join('')}
+        </ul>
+      </div>
+    `).join('');
+
+    // Year + icons
+    $('#year').textContent = new Date().getFullYear();
+    if (window.lucide) lucide.createIcons();
+
+    /* ----------------------------- HEADER SCROLL ----------------------------- */
+    const header = $('#site-header');
+    const brandName = $('#brand-name');
+    const brandSub  = $('#brand-sub');
+    const siteNav   = $('#site-nav');
+    const headerCta = $('#header-cta');
+    const onScroll = () => {
+      const s = window.scrollY > 12;
+      if (s) {
+        header.classList.add('bg-[#F4EEE3]/85','backdrop-blur-md','border-b','border-ink/10');
+        brandName.classList.remove('text-white'); brandName.classList.add('text-ink');
+        brandSub.classList.remove('text-zinc-300'); brandSub.classList.add('text-zinc-500');
+        siteNav.classList.remove('text-zinc-200'); siteNav.classList.add('text-zinc-700');
+        headerCta.classList.remove('pill-white'); headerCta.classList.add('pill-dark');
+      } else {
+        header.classList.remove('bg-[#F4EEE3]/85','backdrop-blur-md','border-b','border-ink/10');
+        brandName.classList.add('text-white'); brandName.classList.remove('text-ink');
+        brandSub.classList.add('text-zinc-300'); brandSub.classList.remove('text-zinc-500');
+        siteNav.classList.add('text-zinc-200'); siteNav.classList.remove('text-zinc-700');
+        headerCta.classList.add('pill-white'); headerCta.classList.remove('pill-dark');
+      }
+    };
+    onScroll(); window.addEventListener('scroll', onScroll, { passive:true });
+
+    /* ----------------------------- SCROLL REVEAL ----------------------------- */
+    const revealObs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if (e.isIntersecting) { e.target.classList.add('in'); revealObs.unobserve(e.target); }
+      });
+    }, { threshold:0.15, rootMargin:'0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    /* ----------------------------- BACK TO TOP ----------------------------- */
+    $('#back-to-top').addEventListener('click', ()=> window.scrollTo({ top:0, behavior:'smooth' }));
+
+    /* ----------------------------- TOAST ----------------------------- */
+    function toast(title, desc, type='success'){
+      const t = document.createElement('div');
+      t.className = `toast ${type}`;
+      t.innerHTML = `<div class="t-title">${title}</div>${desc?`<div class="t-desc">${desc}</div>`:''}`;
+      document.body.appendChild(t);
+      requestAnimationFrame(()=> t.classList.add('show'));
+      setTimeout(()=>{ t.classList.remove('show'); setTimeout(()=> t.remove(), 320); }, 2800);
+    }
+
+    /* ----------------------------- COPY EMAIL ----------------------------- */
+    const EMAIL = 'sawaaenterprise@gmail.com';
+    $('#copy-email').addEventListener('click', async ()=>{
+      try {
+        await navigator.clipboard.writeText(EMAIL);
+        toast('Email copied to clipboard', EMAIL, 'success');
+      } catch { toast('Unable to copy email','', 'error'); }
+    });
+
+    /* ----------------------------- CONTACT FORM (mailto) ----------------------------- */
+    $('#contact-form').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      if ($('#hp-website').value) return; // honeypot
+      const name = $('#c-name').value.trim();
+      const email = $('#c-email').value.trim();
+      const company = $('#c-company').value.trim();
+      const service = $('#c-service').value;
+      const message = $('#c-message').value.trim();
+      if (!name || !email || !service) { toast('Please complete name, email and service request.','','error'); return; }
+      const subject = encodeURIComponent(`Enquiry · ${service} · ${name}`);
+      const body = encodeURIComponent(
+`Name: ${name}
+Email: ${email}
+Company: ${company || '—'}
+Service: ${service}
+
+Brief:
+${message || '—'}`);
+      window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
+      toast('Opening your email client…','We respond within 24 hours','success');
+    });
+
+    /* ----------------------------- DOT GLOBE (canvas) ----------------------------- */
+    (function(){
+      const canvas = document.getElementById('dot-globe');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let w,h,cx,cy,R;
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      let rotY = 0;
+      let mx = 0, my = 0, smx = 0, smy = 0;
+      let raf = 0;
+
+      const resize = () => {
+        const W = canvas.parentElement.clientWidth || window.innerWidth;
+        const H = canvas.parentElement.clientHeight || window.innerHeight;
+        w = canvas.width = W * dpr; h = canvas.height = H * dpr;
+        canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+        cx = w/2; cy = h/2;
+        R = Math.min(W,H) * 0.42 * dpr;
+      };
+
+      const LAT = 18, LNG = 28, SEG = 64;
+      const parallels = [], meridians = [];
+      for (let i = 1; i < LAT; i++) {
+        const phi = (i/LAT) * Math.PI - Math.PI/2;
+        const ring = []; const cy_ = Math.sin(phi); const r_ = Math.cos(phi);
+        for (let s = 0; s <= SEG; s++) {
+          const t = (s/SEG) * Math.PI * 2;
+          ring.push({ x:r_*Math.cos(t), y:cy_, z:r_*Math.sin(t) });
+        }
+        parallels.push(ring);
+      }
+      for (let j = 0; j < LNG; j++) {
+        const theta = (j/LNG) * Math.PI * 2;
+        const arc = []; const ct = Math.cos(theta), st = Math.sin(theta);
+        for (let s = 0; s <= SEG; s++) {
+          const phi = (s/SEG) * Math.PI - Math.PI/2;
+          const cy_ = Math.sin(phi); const r_ = Math.cos(phi);
+          arc.push({ x:r_*ct, y:cy_, z:r_*st });
+        }
+        meridians.push(arc);
+      }
+      const N = 360, dots = new Array(N), golden = Math.PI * (3 - Math.sqrt(5));
+      for (let i = 0; i < N; i++) {
+        const t = i/(N-1); const y = 1 - 2*t; const r = Math.sqrt(1-y*y); const phi = i*golden;
+        dots[i] = { x:r*Math.cos(phi), y, z:r*Math.sin(phi) };
+      }
+
+      const project = (p, cosY, sinY, cosX, sinX) => {
+        const x1 = p.x*cosY - p.z*sinY;
+        const z1 = p.x*sinY + p.z*cosY;
+        const y2 = p.y*cosX - z1*sinX;
+        const z2 = p.y*sinX + z1*cosX;
+        const persp = 1.6 / (1.7 - z2);
+        return { sx: cx + x1*R*persp, sy: cy + y2*R*persp, depth: (z2 + 1)/2 };
+      };
+
+      const onMove = (e) => {
+        const r = canvas.getBoundingClientRect();
+        mx = ((e.clientX - r.left)/r.width)*2 - 1;
+        my = ((e.clientY - r.top)/r.height)*2 - 1;
+      };
+      const onLeave = () => { mx = 0; my = 0; };
+
+      const tick = () => {
+        ctx.clearRect(0,0,w,h);
+        smx += (mx - smx)*0.04;
+        smy += (my - smy)*0.04;
+        rotY += 0.0015;
+        const ry = rotY + smx*0.45;
+        const rx = smy*0.28;
+        const cosY = Math.cos(ry), sinY = Math.sin(ry);
+        const cosX = Math.cos(rx), sinX = Math.sin(rx);
+
+        ctx.lineWidth = 0.6 * dpr;
+
+        for (const ring of parallels) {
+          for (let i = 0; i < ring.length - 1; i++) {
+            const a = project(ring[i], cosY, sinY, cosX, sinX);
+            const b = project(ring[i+1], cosY, sinY, cosX, sinX);
+            const d = (a.depth + b.depth)/2; if (d < 0.35) continue;
+            ctx.beginPath(); ctx.strokeStyle = `rgba(225,225,232,${0.05 + d*0.45})`;
+            ctx.moveTo(a.sx,a.sy); ctx.lineTo(b.sx,b.sy); ctx.stroke();
+          }
+        }
+        for (const arc of meridians) {
+          for (let i = 0; i < arc.length - 1; i++) {
+            const a = project(arc[i], cosY, sinY, cosX, sinX);
+            const b = project(arc[i+1], cosY, sinY, cosX, sinX);
+            const d = (a.depth + b.depth)/2; if (d < 0.35) continue;
+            ctx.beginPath(); ctx.strokeStyle = `rgba(225,225,232,${0.05 + d*0.45})`;
+            ctx.moveTo(a.sx,a.sy); ctx.lineTo(b.sx,b.sy); ctx.stroke();
+          }
+        }
+        for (let i = 0; i < N; i++) {
+          const p = project(dots[i], cosY, sinY, cosX, sinX);
+          if (p.depth < 0.3) continue;
+          const a = 0.15 + p.depth*0.85;
+          const sz = (0.5 + p.depth*1.4)*dpr;
+          ctx.beginPath(); ctx.fillStyle = `rgba(255,255,255,${a})`;
+          ctx.arc(p.sx,p.sy,sz,0,Math.PI*2); ctx.fill();
+        }
+        raf = requestAnimationFrame(tick);
+      };
+
+      resize(); tick();
+      window.addEventListener('resize', resize);
+      canvas.parentElement.addEventListener('mousemove', onMove);
+      canvas.parentElement.addEventListener('mouseleave', onLeave);
+    })();
+  </script>
+</body>
+</html>
